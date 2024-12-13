@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #F5F5F5;
+}
+
+.main{
+    width: 1000px;
+    height: 800px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.my_heading{
+    text-align: center;
+}
+
+.allBox{
+    width: 1000px;
+    height: 600px;
+
+}
+
+.box{
+    width: 313px;
+    height: 260px;
+    background-color: white;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    border-radius: 0.25rem;
+  
+}
+
+.myImg{
+    width: 100px;
+    height: 80px;
+
+}
+
+p{
+    font-size: 14px;
+    
+}

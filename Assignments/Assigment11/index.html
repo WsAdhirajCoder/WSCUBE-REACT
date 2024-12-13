@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: sans-serif;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        .header{
+            width: 100%;
+            height: 93px;
+            /* background-color: pink; */
+        }
+        
+        .navbar{
+            width: 1140px;
+            margin: auto;
+            height: 93px;
+            
+        }
+        .left ul{
+            display: inline-flex;
+            margin-top: 39px;
+            margin-left: 20px;
+            font-family: sans-serif;
+            gap: 22px;
+
+        }
+        .logo{
+            margin-top: 14px;
+        }
+
+        .left{
+            display: flex;
+            float: left;
+        }
+
+        .right{
+            float: right;
+            display: flex;
+            margin-top: 17px;
+        }
+
+        .button1 button{
+            width: 152px;
+            height: 46px;
+            border: none;
+            background-color: transparent;
+            border-radius: 0.25rem;
+            padding: 12px 15px;
+            color: #4e4e4e;
+            border: 1px solid lightgrey;
+            margin: 5px;
+            
+        }
+        
+        .button2 button{
+            width: 103px;
+            height: 46px;
+            border: none;
+            background-color: white;
+            border-radius: 0.25rem;
+            padding: 12px 15px;
+            margin: 5px;
+            color: #fff;
+            background-color: #2669FB;
+            
+        }
+        
+        
+        .button2 button:hover{
+            border: 1px solid lightgrey;
+            background-color: transparent;
+            color: #4e4e4e;
+        }
+
+        .button1 button:hover{
+            border: 1px solid lightgrey;
+            background-color: #2669FB;
+            color: white;
+        }
+        
+
+        .main{
+            background-image: url(https://wscubetech.co/Assignments/Assigment-11/images/spotlight-bg.webp);
+            width: 100%;
+            height: 232px;
+            padding: 80px 0px;
+            background-position: center 89%;
+            background-size: cover;
+            text-align: center;
+        }
+
+        
+        .p1{
+            font-size: 44px !important;
+            color: white;
+            display: inline;
+            background-image: url(https://wscubetech.co/Assignments/Assigment-11/images/spotlight-heading-bg.svg);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            padding:0px 15px;
+        }
+
+        .p2{
+            font-size: 16px;
+            color: white;
+            margin: 20px 0px;
+            font-family: 400;
+        }
+
+        .container{
+            width: 97.9%;
+            height: 121px;
+            margin: auto;
+            display: flex;
+        }
+
+        .inner{
+            width: 25%;
+            padding: 10px;
+            height: 100%;
+            border-right: 1px solid #0b2f4f;
+        }
+
+        .inner h2{
+            font-size: 48px;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+        .inner h2:hover{
+            color: #FFD700;
+        }
+
+        .inner p {
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(156, 178, 197);
+        }
+
+        
+        .main1{
+            padding: 120px 0px;
+            background-color: #F8F9FD;
+        }
+
+        .left1{
+            width: 50%;
+            float: left;
+        }
+        .right1{
+            
+            width: 50%;
+            float: left;
+            height: 759px;
+            background-image: url(https://wscubetech.co/Assignments/Assigment-11/images/iq-circle.webp),url(https://wscubetech.co/Assignments/Assigment-11/images/iq-dot-bg.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 96% 94%, 6% 8%;
+        }
+
+        .cont2{
+            width: 97.9%;
+            margin: auto;
+        }
+
+        .po1{
+            font-size: 36px;
+            color: rgb(33, 37, 41);;
+        }
+
+        .po2{
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(67, 80, 91);
+            margin: 40px 0px;
+        }
+
+        .card{
+            border: 1px solid #d0d5dd;
+            border-radius: 0.25rem;
+            padding: 24px;
+            box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+            margin-bottom: 16px;
+        }
+        
+        .card:hover{
+            
+            border: 1px solid #2699FB;
+        }
+
+        .co1{
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(10, 33, 52);
+        }
+
+        .co2{
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(67, 80, 91);
+            margin: 15px 0px;
+        }
+
+        .co3{
+            font-size: 16px;
+            font-weight: 400;
+            color: #2699FB;
+        }
+        
+        .button3{
+            padding: 12px 15px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            background-color: #2699FB;
+            color: white;
+            font-size: 17px;
+            border-radius: 6px;
+        }
+
+       .img{
+           
+            width:  500px;
+            height:  593px;
+            margin-left: 90px;
+            margin-top: 70px;
+
+
+        }
+      
+
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="left">
+                <img src="wscube-tech-logo.svg" class="logo" width="140" height="58px" alt="">
+                <ul>
+                    <li>Offline</li>
+                    <li>Live Online</li>
+                    <li>Self-Placed</li>
+                    <li>Free Resources</li>
+                    <li>More</li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="button1"><button>Become Mentor</button></div>
+                <div class="button2"><button>Reach Us</button></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main">
+        
+            <h1 class="p1">WsCube Tech in Numbers</h1>
+            <p class="p2">Our learner community's unwavering trust and confidence continue to propel our success story forward.</p>
+
+            <div class="container">
+                <div class="inner">
+                    <h2>3M+</h2>
+                    <p>Learners On YouTube</p>
+                </div>
+                <div class="inner">
+                    <h2>150K+</h2>
+                    <p>Aspirants Trained</p>
+                </div>
+                <div class="inner">
+                    <h2>20+</h2>
+                    <p>Training Domains</p>
+                </div>
+                <div class="inner">
+                    <h2>4.8/5</h2>
+                    <p>Average Learner Satisfaction</p>
+                </div>
+            </div>
+    </div>
+
+<div class="main1">
+    <div class="cont2">
+        <div class="left1">
+            <h1 class="po1">Nail Job Interviews with Core Questions</h1>
+            <p class="po2">Explore the most comprehensive set of interview questions that are frequently asked by companies/employers:</p>
+
+            <div class="card">
+                <h4 class="co1">Top 108 SEO Interview Questions and Answers</h4>
+                <p class="co2">Well-curated basic to advanced interview questions on SEO, categorized into freshers and experienced professionals. Also, find tips to fast-track a career in SEO.</p>
+                <p class="co3">Learn Now →</p>
+            </div>
+            
+            <div class="card">
+                <h4 class="co1">Top 108 SEO Interview Questions and Answers</h4>
+                <p class="co2">Well-curated basic to advanced interview questions on SEO, categorized into freshers and experienced professionals. Also, find tips to fast-track a career in SEO.</p>
+                <p class="co3">Learn Now →</p>
+            </div>
+            
+            <div class="card">
+                <h4 class="co1">Top 108 SEO Interview Questions and Answers</h4>
+                <p class="co2">Well-curated basic to advanced interview questions on SEO, categorized into freshers and experienced professionals. Also, find tips to fast-track a career in SEO.</p>
+                <p class="co3">Learn Now →</p>
+            </div>
+            <button class="button3">View All</button>
+        </div>
+        <div class="right1">
+            <!-- <div class="img"> -->
+            <img src="https://wscubetech.co/Assignments/Assigment-11/images/iq-question%20(1).webp" class="img" alt="">
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>

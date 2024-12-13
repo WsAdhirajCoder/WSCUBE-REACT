@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+    <style>
+        .row{
+            margin-top: 25px;
+        }
+
+        .coloum{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addclass()">Add</button>
+    <button onclick="removeclass()">Remove</button>
+    <button onclick="toggleclass()">Toggle</button>
+
+    <div class="row ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, vitae obcaecati consequuntur velit inventore enim praesentium similique cum iure a cumque cupiditate ratione quod voluptatibus sed sunt distinctio, non dicta.
+    </div>
+
+    <script>
+        function addclass(){
+            document.querySelector('.row').classList.add('coloum')
+        }
+        
+        function removeclass(){
+            document.querySelector('.row').classList.remove('coloum')
+            
+        }
+        
+        function toggleclass(){
+            
+            document.querySelector('.row').classList.toggle('coloum')
+        }
+    </script>
+</body>
+</html>

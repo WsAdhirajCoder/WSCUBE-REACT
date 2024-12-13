@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row1{
+            width: 100%;
+            background-image:linear-gradient(45deg,
+                    rgba(245, 70, 66, 0.75),
+                    rgba(8, 83, 156, 0.75)),  url(shaadi-north-desktop.webp);
+            height: 600px;
+            background-position: center;
+            background-size: cover;
+            /* background-attachment: fixed not required added by own */
+            background-attachment: fixed;
+        }
+
+        .header{
+            width: 70%;
+            margin: auto;
+
+        }
+
+        .logo{
+            
+            padding-top: 40px;
+        }
+
+        .link{
+            font-size: 16px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .login{
+            float: left;
+        }
+
+        .help{
+            float: left;
+        }
+
+        .left{
+            float: left;
+        }
+
+        .right{
+            float: right;
+            padding-top: 50px;
+            
+        }
+
+        .help{
+            margin-left: 30px;
+        }
+
+        .overlay{
+            width: 1140px;
+            margin: auto;
+            height: 100px;
+            background-color: rgba(0, 0, 0 , 0.3);
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        .line{
+            font-size: 32px;
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 20%;
+            margin-bottom: 3%;
+            font-weight: 400px;
+        }
+
+        .row2{
+            background: #201530 !important;
+            width: 1050px;
+            height: 200px;
+            margin: auto;
+            /* margin-top: 50px; */
+            border-radius: 1rem;
+            /* position: absolute; */
+        }
+        .cont{
+            color: #d2b17c !important;
+            font-size: 34px;
+            line-height: 1.5;
+            width: 90%;
+            font-family: Playfair Display, serif !important;
+        }
+        
+        .cont1{
+            font-size: 16px;
+            color: white;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+            margin-top: 25px;
+            font-weight: 600;
+        }
+
+        .left1{
+            width: 60%;
+            /* border: 1px solid green; */
+            float: left;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        
+        .right1{
+            float: right;
+        }
+
+        .vip{
+            width: 300px;
+            margin-top:5% ;
+            padding-right: 15%;
+            padding-top: 10%;
+            text-align: center;
+        }
+        
+        .vip1{
+            /* border-radius: 9px; */
+            padding-top: 8%;
+            padding-left: 5%;
+            
+        }
+        
+        .hr{
+            background-color: #d2b17c !important;
+            width: 1px;
+            height: 150px;
+            float: left;
+            border: none;
+            margin-top: 25px;
+            margin-left: 80px;
+        }
+
+        .row3{
+            margin-top: 80px;
+     
+        }
+
+        .text{
+            font-size: 35px;
+            color: #ff5a60;
+            font-family: sans-serif;
+            text-align: center;
+            margin-bottom: 90px;
+        }
+/* Col1 */
+        .col-1{
+            width: 30%;
+            margin-left: 80px;
+            float: left;
+        }
+
+        .home{
+            margin-left: 33%;
+        }
+
+   
+      .home-text{
+        font-size: 24px;
+        font-family: sans-serif;
+        /* margin-left: 20px; */
+        margin-top: 40px;
+        color: #00bcd5;
+        text-align: center;
+      }
+
+      .home-cont{
+        font-size: 16px;
+        font-family: sans-serif;
+        /* margin-right: 20px; */
+        /* margin-top: 40px; */
+        color: #72727D;
+        /* position: absolute; */
+        text-align: center;
+        line-height: 1.5rem;
+      }
+
+      /* Col2 */
+      .col-2{
+            width: 30%;
+            /* margin-left: 100px; */
+            float: left;
+        }
+
+        .connect{
+            margin-left: 33%;
+        }
+
+      .connect-text{
+        font-size: 24px;
+        font-family: sans-serif;
+        /* margin-left: 20px; */
+        margin-top: 40px;
+        color: #00bcd5;
+        text-align: center;
+      }
+
+      .connect-cont{
+        font-size: 16px;
+        font-family: sans-serif;
+        /* margin-right: 20px; */
+        /* margin-top: 40px; */
+        color: #72727D;
+        /* position: absolute; */
+        text-align: center;
+        line-height: 1.5rem;
+      }
+
+      /* Col3 */
+      .col-3{
+            width: 30%;
+            /* margin-left: 100px; */
+            float: left;
+        }
+
+        .inter{
+            margin-left: 33%;
+        }
+
+      .inter-text{
+        font-size: 24px;
+        font-family: sans-serif;
+        /* margin-left: 20px; */
+        margin-top: 40px;
+        color: #00bcd5;
+        text-align: center;
+      }
+
+      .inter-cont{
+        font-size: 16px;
+        font-family: sans-serif;
+        /* margin-right: 20px; */
+        /* margin-top: 40px; */
+        color: #72727D;
+        /* position: absolute; */
+        text-align: center;
+        line-height: 1.5rem;
+      }
+
+      /* Section 1 */
+      .section1{
+        padding-top: 50px;
+        padding-bottom: 60px;
+        background-color: #F1F1F2;
+      }
+
+
+      /*  */
+      .col1{
+        width: 21%;
+        margin-left: 220px;
+        min-height: 475px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+        float: left;
+      }
+
+      .col1 .name{
+        font-size: 26px;
+        font-family: sans-serif;
+        color: #51505d;
+        padding-left: 15px;
+        padding-top: 20px;
+      }
+
+     .col1 .name-text{
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #51505d;
+        padding-left: 15px;
+        padding-top: 15px;
+        line-height: 1.5rem;
+        width: 290px;
+      }
+
+      /* col2 */
+
+      .col2{
+        width: 21%;
+        margin-left: 50px;
+        min-height: 475px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+        float: left;
+      }
+
+     .col2 .name{
+        font-size: 26px;
+        font-family: sans-serif;
+        color: #51505d;
+        padding-left: 15px;
+        padding-top: 20px;
+      }
+
+    .col2  .name-text{
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #51505d;
+        padding-left: 15px;
+        padding-top: 15px;
+        line-height: 1.5rem;
+        width: 290px;
+      }
+
+
+      /*  */
+      
+      .col3{
+        width: 21%;
+        margin-left: 50px;
+        min-height: 475px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+        float: left;
+      }
+
+     .col3 .name{
+        font-size: 26px;
+        font-family: sans-serif;
+        color: #51505d;
+        padding-left: 15px;
+        padding-top: 20px;
+      }
+
+    .col3  .name-text{
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #51505d;
+        padding-left: 15px;
+        padding-top: 15px;
+        line-height: 1.5rem;
+        width: 290px;
+      }
+
+/* Header */
+
+.header1{
+    height: 108px;
+    width: 100%;
+    background-color:#ff5a60 ;
+    color: #fff;
+    display: flex;
+    margin-top: 80px;
+}
+
+.header-text{
+    font-size: 24px;
+    font-family: sans-serif;
+    padding-top: 40px;
+    margin-left: 400px;
+}
+
+.header-button{
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 3px;
+    color: white;
+    height: 58px;
+    width: 220px;
+    margin-top: 27px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+    margin-left: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-button:hover{
+    background-color: #fff;
+    color: #42C0D6;
+}
+
+/* section 2 */
+.section2{
+    padding-top: 60px;
+    background-color: #F8F8F8;
+    padding-bottom: 80px;
+}
+/* row6 */
+.p-text{
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #51505d;
+    margin-left: 160px;
+    margin-bottom: 30px;
+}
+
+.box{
+    width: 529px;
+    height: 65px;
+    background-color: #FFF;
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, .1);
+    margin-left: 150px;
+    float: left;
+}
+
+.box-text{
+    font-size: 18px;
+    font-family: sans-serif;
+    user-select: none;
+    font-weight: bolder;
+    color: #00BCD5;
+    padding-top: 22px;
+    padding-left: 40px;
+}
+
+/*  */
+
+.b{
+    box-shadow: -1px 2px 4px rgba(0, 0, 0, .1);
+    margin-left: 150px;
+    margin-top: 50px;
+    width: 1078px;
+    height: 185px;
+    background-color: #fff;
+}
+
+.b-text{
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #51505d;
+    padding-top: 45px;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+
+.b-text1{
+    color: #72727D;
+    font-family: sans-serif;
+    padding-left: 20px;
+    line-height: 1.5rem;
+    font-size: 1.1em;
+}
+
+/*  */
+
+.header2{
+    height: 99px;
+    width: 100%;
+    background-color:#EEEEEE;
+    color: #ff5a60 ;
+    /* display: flex; */
+    /* margin-top: 80px; */
+}
+
+.header2-text{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding-top: 40px;
+    text-align: center;
+    margin-left:450px;
+    float: left;
+}
+
+.h2-img{
+    float: left;
+    padding-top: 38px;
+    margin-left: 15px;
+    gap: 10px;
+}
+
+
+.row10{
+    width: 1101px;
+    margin: auto;
+}
+
+.row10 p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #72727d;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.row11{
+    width: 738px;
+    margin: auto;
+    margin-top: 4%;
+    margin:4% auto ;
+}
+
+.row11 .cls{
+    background-color: #00BCD5;
+    width: 207px;
+    height: 38px;
+    padding: 7px 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 2px;
+    margin: auto;
+}
+
+.roww{
+    display: inline-flex;
+    gap: 3%;
+    text-align: center;
+    color: #95959d;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.ro1{
+    margin-left: 50px;
+    width: 216px;
+    
+}
+
+.ro1 img{
+float: left;
+width:40px;
+height: 40px;
+border-radius: 100%;
+}
+
+.ro1 p{
+    float: left;
+    padding-top: 10px;
+    padding-left: 6px;
+}
+ 
+.ro2{
+    width: 216px;
+}
+
+
+.ro2 img{
+float: left;
+width:40px;
+height: 40px;
+border-radius: 100%;
+}
+
+.ro2 p{
+    float: left;
+    padding-top: 10px;
+    padding-left: 6px;
+}
+
+
+.ro3{
+    width: 216px;
+}
+
+
+.ro3 img{
+float: left;
+width:40px;
+height: 40px;
+border-radius: 100%;
+}
+
+.ro3 p{
+    float: left;
+    padding-top: 10px;
+    padding-left: 6px;
+}
+
+
+.row12{
+    margin-left: 100px;
+    width: 1140px;
+    height: 293px;
+    display: inline-flex;
+    gap: 2%;
+}
+
+.ra1 {
+    width: 285px;
+}
+
+.ra1 span{
+color: #51505D;
+font-size: 16px;
+font-family: sans-serif;
+text-align: center;
+display: block;
+padding: 0px 0px 14px;
+border-bottom: 1px solid #dfe0e3;
+}
+
+.ra1 ul li{
+    font-size: 14px;
+    line-height: 23px;
+    padding: 1px 0;
+    color: #72727d !important;
+    list-style: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.ra2{
+    width: 285px;
+}
+
+
+.ra2 span{
+color: #51505D;
+font-size: 16px;
+font-family: sans-serif;
+text-align: center;
+display: block;
+padding: 0px 0px 14px;
+border-bottom: 1px solid #dfe0e3;
+}
+
+.ra2 ul li{
+    font-size: 14px;
+    line-height: 23px;
+    padding: 1px 0;
+    color: #72727d !important;
+    list-style: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.ra3{
+    width: 285px;
+}
+
+
+.ra3 span{
+color: #51505D;
+font-size: 16px;
+font-family: sans-serif;
+text-align: center;
+display: block;
+padding: 0px 0px 14px;
+border-bottom: 1px solid #dfe0e3;
+}
+
+.ra3 ul li{
+    font-size: 14px;
+    line-height: 23px;
+    padding: 1px 0;
+    color: #72727d !important;
+    list-style: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.ra4{
+    width: 285px;
+}
+
+.ra4 span{
+color: #51505D;
+font-size: 16px;
+font-family: sans-serif;
+text-align: center;
+display: block;
+padding: 0px 0px 14px;
+border-bottom: 1px solid #dfe0e3;
+}
+
+.ra4 ul li{
+    font-size: 14px;
+    line-height: 23px;
+    padding: 1px 0;
+    color: #72727d !important;
+    list-style: none;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.row13{
+    height: 64px;
+    width: 100%;
+
+    background-color: #EEEEEE;
+}
+
+.row131{
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: auto;
+    padding-top: 25px;
+    color: #95959d;
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+.overlay{
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+label{
+    color: #F5F5F5;
+    font-family: sans-serif;
+    
+}
+
+.over1{
+    width: 185px;
+}
+
+.over1 select{
+    width: 175px;
+    height: 36px;
+    border: none;
+    background-color: #fff;
+    border-radius: 0.20rem;
+    margin-top: 3px;
+    font-size: 16px;
+    padding: 5px 30px 5px 10px;
+    color: #72727D;
+}
+/*  */
+
+.over2{
+    width: 278px;
+}
+
+.over2 select{
+    width: 112px;
+    height: 36px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    border-radius: 0.20rem;
+    margin-top: 3px;
+    font-size: 16px;
+    padding: 5px 30px 5px 10px;
+    color: #72727D;
+    
+}
+.ove{
+    display: flex;
+}
+ </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="row1">
+        <div class="header">
+            <div class="left">
+            <div class="logo"><img src="https://img2.shaadi.com/assests/2021/images/Matrimony-Service-by-Shaadi.com.png" alt=""></div>
+            </div>
+
+            <div class="right">
+                <div class="login"><p class="link">Login</p></div>
+                <div class="help"><p class="link">Help</p></div>
+            </div>
+        </div>
+
+<div class="clear"></div>
+<div class="line">Trusted Matrimony & Matchmaking Service</div>
+<div class="overlay">
+    <div class="ove">
+    <div class="over1"> 
+        <form >
+            <label>I'm looking for a</label>
+            <select name="" >
+                <option value="Woman" class="o">Woman</option>
+                <option value="Woman" class="o">Man</option>
+            </select>
+        </form>
+    </div>
+
+
+    <div class="over2"> 
+        <form >
+            <label>aged</label>
+            <div>
+            <select name="" >
+                <option value="Woman" class="o">20</option>
+                <option value="Woman" class="o">21</option>
+            </select>
+
+            <span style="color: #fff; font-size: 20px;">to</span>
+            <select name="" >
+                <option value="Woman" class="o">20</option>
+                <option value="Woman" class="o">21</option>
+            </select>
+</div>
+
+        </form>
+    </div>
+
+
+
+
+    <!--  -->
+
+    <div class="over1"> 
+        <form >
+            <label>of religion</label>
+            <select name="" >
+                <option  class="o">Select</option>
+                <option class="o">Hindu</option>
+                <option class="o">Muslim</option>
+            </select>
+        </form>
+    </div>
+
+<!--  -->
+
+
+<div class="over2"> 
+    <form >
+        <label>and mother Tounge</label>
+       
+        <select name="" style="width: 268px ;">
+            <option value="Woman" class="o">20</option>
+            <option value="Woman" class="o">21</option>
+        </select>
+    </form>
+</div>
+
+
+
+<button style="width: 175px; height: 38px; border: none; cursor: pointer; background-color: #53b9d2; color: #fff; font-size: 18px; margin-top: 20px; border-radius: 0.25rem;">Let's Begin</button>
+</div>
+</div>
+    </div>
+
+
+<div class="section1">
+    <div class="clear"></div>
+
+    <div class="row2">
+        <div class="left1">
+            <p class="cont">Exclusive & Personalised Matchmaking by Shaadi.com</p>
+            <p class="cont1">Top Rated Consultants | 5 times higher success rates | 100% Privacy</p>
+        </div>
+
+        <hr class="hr"></hr>
+        
+        <div class="right1">
+            <div class="div-vip">
+            <img src="https://img2.shaadi.com/assests/2023/images/homepage/vipshaadi/vip_logo.webp" alt="" class="vip">
+            </div>
+            <div class="div-buttom">
+            <img src="button.png" alt="" class="vip1">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row3">
+        <p class="text">Find your Special Someone</p>
+        
+        <div class="item">
+            <div class="col-1">
+                <img class="home" width="133" height="148" src="home-icon-sprite.png" alt="">
+                <p class="home-text">Sign Up</p>
+                <p class="home-cont">Register for free & put up your Matrimony Profile</p>
+            </div>
+            <div class="col-2">
+                <img class="connect" width="133" height="148" src="home-icon-sprite.png" alt="">
+                <p class="connect-text">Connect</p>
+                <p class="connect-cont">Select & Connect with Matches you like</p>
+            </div>
+            <div class="col-3">
+                <img class="inter" width="133" height="148" src="home-icon-sprite.png" alt="">
+                <p class="inter-text">Interact</p>
+                <p class="inter-cont">Become a Premium Member & Start a <br> Conversation</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+    
+</div>
+
+
+
+<div class="row4">
+    <p class="text" style="margin-top: 90px;">Matrimony Service with Millions of Success Stories</p>
+
+    <div class="item1">
+
+
+        <div class="col1">
+            <div class="upper">
+            <img width="100%" height="225" src="https://img.shaadi.com/success-story/3SH46062682-XSH35609635-big.jpg" alt="">
+            </div>
+
+            <div class="lower">
+                <p class="name">Priyanka & Somonath</p>
+                <p class="name-text">Finding true love in todays fast-paced world can be challenging. But sometimes, the most beautiful stories unfold in the most unexpected ways. M...</p>
+            </div>
+        </div>
+
+          <div class="col2">
+            <div class="upper">
+            <img width="100%" height="225" src="https://img.shaadi.com/success-story/5SH39633228-8SH80470852-big.jpg" alt="">
+            </div>
+
+            <div class="lower">
+                <p class="name">Vijay & Vrushali</p>
+                <p class="name-text">I found Vrushali on Shaadi.com few months ago. The details and pics given on this platform are very beautifully organised. Thanks to Shaadi.com in...</p>
+            </div>
+        </div>
+
+          <div class="col3">
+            <div class="upper">
+            <img width="100%" height="225" src="https://img.shaadi.com/success-story/5SH39633228-8SH80470852-big.jpg" alt="">
+            </div>
+
+            <div class="lower">
+                <p class="name">Vijay & Vrushali</p>
+                <p class="name-text">I found Vrushali on Shaadi.com few months ago. The details and pics given on this platform are very beautifully organised. Thanks to Shaadi.com in...</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<div class="row5">
+    <div class="header1">
+        <p class="header-text">Your story is waiting to happen!</p>
+        <button class="header-button">Get Started</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="section2">
+    <div class="row6">
+
+
+        <div class="p1">
+            <p class="p-text">Explore Matrimonial Profiles By</p>
+            <div class="box">
+                <p class="box-text">Community</p>
+            </div>
+
+            <div class="box" style="margin-left: 20px;">
+                <p class="box-text">City</p>
+            </div>
+        </div>
+
+        
+                <div class="p2">
+                    <div class="box" style="margin-top: 15px;">
+                        <p class="box-text">Country</p>
+                    </div>
+        
+                    <div class="box" style="margin-left: 20px; margin-top: 15px;">
+                        <p class="box-text">State</p>
+                    </div>
+                </div>
+        
+
+                <div class="p3">
+                    <div class="box" style="margin-top: 15px;">
+                        <p class="box-text">Marital State</p>
+                    </div>
+        
+                    <div class="box" style="margin-left: 20px; margin-top: 15px;">
+                        <p class="box-text">Mother Tounge</p>
+                    </div>
+                </div>
+
+                <div class="p4">
+                    <div class="box" style="margin-top: 15px;">
+                        <p class="box-text">Religion</p>
+                    </div>
+
+                </div>
+
+
+
+
+                <!--  -->
+<div class="clear"></div>
+                
+        <div class="p1">
+            <p class="p-text" style="margin-top: 30px;">Dating</p>
+            <div class="box">
+                <p class="box-text">Country</p>
+            </div>
+
+            <div class="box" style="margin-left: 20px;">
+                <p class="box-text">Country Single</p>
+            </div>
+        </div>
+
+        
+                <div class="p2">
+                    <div class="box" style="margin-top: 15px;">
+                        <p class="box-text">City Wise</p>
+                    </div>
+        
+                    <div class="box" style="margin-left: 20px; margin-top: 15px;">
+                        <p class="box-text">City Singles</p>
+                    </div>
+                </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+
+    <div class="row7">
+        <div class="b">
+            <p class="b-text">Horoscope</p>
+            <p class="b-text1">Kundali Matching | Tamil Kundali Matching | Telugu Kundali Matching | Malayalam Kundali Matching | Marathi Kundali Matching | Gujarati Kundali Matching | Kannada Kundali Matching  </p>
+        </div>
+
+        <div class="b">
+            <p class="b-text">Community Matrimony Services</p>
+            <p class="b-text1">Marathi Shaadi | Assamese Shaadi | Bengali Shaadi | Buddhist Shaadi | Christian Shaadi |  Hindi Shaadi | Gujarati Shaadi | Jain Shaadi | Kannada Shaadi | Kashmiri Shaadi | Konkani Shaadi | Malayalee Shaadi | Marwari Shaadi | Muslim Shaadi | NRI Shaadi | Punjabi Shaadi | Tamil Shaadi | Telugu Shaadi    </p>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<div class="row8">
+    <div class="header2">
+        <p class="header2-text">Download the Matrimony App</p>
+        <div class="h2-img">
+        <img src="https://img2.shaadi.com/assests/2021/images/Matrimony-App-Shaadi.com-Playstore.png" width="104" height="31" alt="">
+        <img src="https://img2.shaadi.com/assests/2021/images/Matrimony-App-Shaadi.com-Appstore.png" width="104" height="31" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="row9" ><img src="sprite-homepg-v5.png" style="margin-left: 47%; margin-top: 4%; margin-bottom: 4%;" alt=""></div>
+
+<div class="row10">
+    <p>Shaadi.com, India’s No.1 Matchmaking and Matrimony Service*, was founded with a simple objective - to help people find happiness. Shaadi.com is a leader in what is sometimes known as the matrimony category, we have touched more than 50 million lives.</p>
+    <p style="margin-top: 2%;">Shaadi.com - a trusted matrimonial & matchmaking service, has always differentiated itself from other matrimonials through its innovation-led approach by redefining the way Indian brides and grooms meet for marriage.</p>
+    <p style="margin-top: 2%;">We have also created trusted and renowned community specific matrimony platforms such as TamilShaadi.com, TeluguShaadi.com, MalayaleeShaadi.com, KannadaShaadi.com, BengaliShaadi.com, GujaratiShaadi.com, MarathiShaadi.com, PunjabiShaadi.com and more that has changed the way of finding a life partner.</p>
+    <p style="margin-top: 2%;">Shaadi.com (sometimes mis-spelt as Shadi.com, Shadhi.com or Sadi.com) is a social networking site specialising in matchmaking and not just a matrimonial service. </p>
+    <p style="margin-top: 2%;">* Based on the number of downloads in the last 12 months of the Shaadi.com App – as reported by AppTweak.</p>
+    <p style="color: #00bcd5;">Learn more</p>
+    <p style="text-align: center;"><span style="color: #00bcd5;">India </span> | <span style="color: #00bcd5;"> USA </span> | <span style="color: #00bcd5;">Canada </span> | <span style="color: #00bcd5;"> UK </span> | <span style="color: #00bcd5;"> Singapore</span> | <span style="color: #00bcd5;">Australia </span> | <span style="color: #00bcd5;"> UAE </span> | <span style="color: #00bcd5;">NRI Matrimonials</span></p>
+</div>
+
+
+<div class="row11">
+<p class="cls">Trusted by Millions</p>
+<hr color="#DFE0E3">
+<div class="roww">
+    <div class="ro1"><img src="user.png" alt=""> <p>Best Matches</p></div>
+    <div class="ro2"><img src="user.png" alt=""><p>Verified Profile</p></div>
+    <div class="ro3"><img src="user.png" alt=""><p>100% Privacy</p></div>
+</div>
+<hr color="#DFE0E3">
+</div>
+
+
+<div class="row12">
+<div class="ra1">
+    <span>Need Help?</span>
+    <ul >
+        <li>Member Login</li>
+        <li>Sign Up</li>
+        <li>Partner Search</li>
+        <li>How to use Shaadi.com</li>
+        <li>Prenium Membership</li>
+        <li>Customer Support</li>
+        <li>Site Map</li>
+    </ul>
+</div>
+<div class="ra2">
+    <span>Need Help?</span>
+    <ul >
+        <li>Member Login</li>
+        <li>Sign Up</li>
+        <li>Partner Search</li>
+        <li>How to use Shaadi.com</li>
+        <li>Prenium Membership</li>
+        <li>Customer Support</li>
+        <li>Site Map</li>
+    </ul>
+</div>
+<div class="ra3">
+    <span>Need Help?</span>
+    <ul >
+        <li>Member Login</li>
+        <li>Sign Up</li>
+        <li>Partner Search</li>
+        <li>How to use Shaadi.com</li>
+        <li>Prenium Membership</li>
+        <li>Customer Support</li>
+        <li>Site Map</li>
+    </ul>
+</div>
+<div class="ra4">
+    <span>Need Help?</span>
+    <ul >
+        <li>Member Login</li>
+        <li>Sign Up</li>
+        <li>Partner Search</li>
+        <li>How to use Shaadi.com</li>
+        <li>Prenium Membership</li>
+        <li>Customer Support</li>
+        <li>Site Map</li>
+    </ul>
+</div>
+</div>
+
+
+
+<div class="row13">
+    <div class="row131">
+<p>© 1996-2024 Shaadi.com, The World's Leading Matchmaking Service™</p>
+<p>Passionately created by <span style="color: #00BCD5;"> People Group ➤ </span></p>
+    </div>
+
+</div>
+</body>
+</html>

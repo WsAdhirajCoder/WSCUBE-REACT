@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{color: white;}
+
+
+        .row{
+            background-color: red;
+
+        }
+
+        #row{
+            height: 200px;
+            width: 200px;
+        }
+        
+        .row2{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="row" id="row"><h1>WsCube Tech</h1> </div>
+
+<br><br>
+<div class="row row2"  >
+    <div style="background-color: black; height: 100px; width: 200px;"></div>
+    <div style="background-color: green; height: 100px; width: 200px;"></div>
+</div>
+
+
+<br><br>
+<div style="background-color: red; width: 200px; height: 200px;  ">
+    <div style="background-color: black; height: 200px; width: 75px; float: left;"></div>
+    <div style="background-color: green; height: 200px; width: 75px; float: right;"></div>
+</div>
+
+
+
+
+<br><br>
+<div style="background-color: red; width: 400px; height: 100px;  ">
+    <div style="background-color: black; height: 100px; width: 100px; float: left;"></div>
+    <div style="background-color: green; height: 100px; width: 100px; float: left;"></div>
+    <div style="background-color: pink; height: 100px; width: 100px; float: right;"></div>
+</div>
+
+
+<br><br>
+
+
+<div style="background-color: red; width: 200px; height: 200px;  ">
+
+    <div style="background-color: black; height: 100px; width: 200px; ">
+        <div style="background-color: blue; width: 100px; height: 100px; float: left;"></div>
+         <div style="background-color: brown ; width: 100px; height: 100px; float: left;"></div>
+     </div>
+
+    <div style="background-color: green; height: 100px; width: 200px; ">
+         <div style="background-color: gold; width: 100px; height: 100px;  float: right;"></div>
+        <div style="background-color: salmon ; width: 100px; height: 100px; float: right;"></div>  
+    </div>
+
+</div>
+
+
+
+<br><br><br>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var str = 'hello World';
+        var result = '';
+        var charCount = {};
+        for(var data of str){
+            charCount[data] = (charCount[data] || 0)+1;
+        }
+        
+        for(var data of str){
+            console.log(charCount[data])
+            if(charCount[data] == 1){
+                var result = data;
+                break;
+            }
+        }
+        console.log(result)
+    </script>
+</body>
+</html>

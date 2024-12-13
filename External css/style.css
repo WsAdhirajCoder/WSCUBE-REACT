@@ -1,0 +1,54 @@
+
+
+.row{
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    padding: 15px;
+    background-image: url(i.jpeg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 55px;
+
+}
+
+
+.row1{
+    margin: auto;
+        width: 1000px;
+        height: 200px;
+        background-image: url(i.jpeg);
+        background-attachment: fixed;
+
+}
+
+.row2{
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    background-color: seagreen;
+}
+
+.row3{
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.row4{
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.row5{
+    margin: auto;
+    width: 1000px;
+    height: 200px;
+    background-color: yellow;
+}

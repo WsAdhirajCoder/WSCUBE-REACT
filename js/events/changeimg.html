@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image</title>
+    <style>
+        .row{
+            text-align: center;
+        }
+
+        .row img{
+            width: 300px;
+            height: 500px;
+        }
+
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <img id="imga" onmousedown="image(1)" onmouseup="image(2)" src="images/1.jpg" />
+
+        <img src="images/1.jpg"  onmouseenter="moveImg()"  alt="">
+        <!-- <img src="images/1.jpg"  onmousemove="moveImg()"  alt=""> -->
+        <img src="images/1.jpg"  onmousewheel="moveImg()"  alt="">
+    </div>
+
+    <script>
+        function image(value){
+            if(value ==1){
+                document.getElementById('imga').src = 'images/2.jpg';
+                document.querySelector('body').style.backgroundColor = 'white';
+            } else{
+                document.getElementById('imga').setAttribute('src','images/1.jpg')
+                document.querySelector('body').style.backgroundColor = 'black';
+            }
+            // console.log(value)
+        }
+
+        function moveImg(){
+            console.log('hello')
+        }
+
+    </script>
+</body>
+</html>

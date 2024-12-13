@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.row{
+    width: 1200px;
+    margin: auto;
+}
+
+.quesans{
+    border: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+.head{
+    font-size: 50px;
+    text-align: center;
+    padding: 40px;
+}
+
+.ques{
+    padding: 15px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.ques span{
+    float: right;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.ans{
+    padding: 15px;
+}
+
+.display{
+    display: none;
+}

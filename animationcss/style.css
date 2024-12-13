@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.Welcome{
+    background-color: black;
+    padding: 15px 25px;
+    color: white;
+    margin: 50px;
+    border-radius: 8px;
+    animation: color 4s linear infinite;
+    float: left;
+    font-weight: bold;
+}
+
+@keyframes color {
+    from{
+        background-color: red;
+    }
+
+    to{
+    background-color: yellow;
+    }
+}

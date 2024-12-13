@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <button value="Click Me">Sumbit</button>
+
+    <script>
+        function callData() {
+            console.log('Working Fine');
+        }
+
+        var button = document.querySelector('button');
+
+        // button.addEventListener('click',callData)
+        // button.addEventListener('click',function(){console.log('Welcome')})
+        button.addEventListener('click',(event)=>{
+            console.log(event.target.innerHTML)
+        })
+
+    </script>
+</body>
+</html>

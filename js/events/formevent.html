@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.row input, select{
+width: 19%;
+height: 12%;
+margin-top: 15px;
+}
+</style>
+</head>
+<body>
+    
+
+<div class="row">
+    <input type="text" onfocus="copycut(this)" name="" id="">
+</div>
+
+<div class="row">
+    <input type="text" onblur="copycut(this)" name="" id="">
+</div>
+
+<div class="row">
+    <select name="" id="id" onchange="copycut(this)">
+        <option value="HTML">HTML</option>
+        <option value="HTML 5">HTML 5</option>
+        <option value="CSS">CSS</option>
+        <option value="CSS 3">CSS 3</option>
+    </select>
+</div>
+
+<script>
+    function  copycut(){
+        console.log('Event is working fine')
+        var cel = document.getElementById('id').value;
+        console.log(cel)
+    }
+
+
+</script>
+</body>
+</html>

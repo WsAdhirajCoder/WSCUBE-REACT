@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function vowel(){
+        var namei = ["Arjun","vinita","Ravi","Nihsa" , "Ishan","Priya","Veer", "Sidhart","Karan","Ayesha","Rahul","Vikram","Neha","Deepak","Kavita","Aditya","Divya","Rohan"];
+        var vowel =  ['a','e','i','o','u']
+
+        var arrn = [];
+        for(var data of namei){
+            if(vowel.includes(data[0].toLowerCase())){
+                if(data.length >5){
+                arrn.push(data);
+                }
+                console.log(data);
+            }
+        }
+        console.log(arrn)
+        }
+
+        // vowel()
+
+        function upperName(){
+        var namei = ["arjun","vinita","ravi","nihsa" , "ishan","priya","veer", "sidhart","karan","ayesha","rahul","vikram","neha","deepak","kavita","aditya","divya","rohan"];
+            var  data = namei.map((v,i)=>{
+                var a = v.slice(0,1).toUpperCase() + v.slice(1);
+                return a;
+            })
+            console.log(data)
+        }
+        
+
+        upperName();
+    </script>
+</body>
+</html>
